@@ -77,19 +77,6 @@ Install the required npm modules by running:
 
 ---
 
-### Server Configuration
-
-Ensure the server listens on all network interfaces. In the `server.js` file, verify that the following code is used:
-
-    const PORT = process.env.PORT || 3000;
-    server.listen(PORT, '0.0.0.0', () => {
-      console.log(`Server is running on port ${PORT}`);
-    });
-
-This configuration makes the application accessible from all devices on your local network.
-
----
-
 ## Running the Application
 
 ### Starting the Server
