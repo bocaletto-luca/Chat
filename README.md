@@ -10,8 +10,6 @@ Chat-JS is a self-contained real-time chat web application built with Node.js, E
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Configuration](#configuration)
-  - [Static IP Setup with Netplan (Ubuntu)](#static-ip-setup-with-netplan-ubuntu)
-  - [Updating the Hosts File on Client Devices](#updating-the-hosts-file-on-client-devices)
   - [Server Configuration](#server-configuration)
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
