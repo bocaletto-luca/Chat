@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat-JS | Real-Time Chat Application by Luca Bocaletto</title>
+  <meta name="description" content="Chat-JS is a self-contained real-time chat web application built with Node.js, Express, and Socket.IO. It features user registration, persistent sessions, a real-time chat interface with persistent message history, a global notification bell, and a 'Clear Chat' button for resetting conversations.">
+  <meta name="keywords" content="Chat, Real-Time Chat, Node.js, Express, Socket.IO, Chat Application, Persistent Chat, User Registration, Clear Chat, Luca Bocaletto">
+  <meta name="author" content="Luca Bocaletto">
+  
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Chat-JS | Real-Time Chat Application">
+  <meta property="og:description" content="A self-contained real-time chat web application featuring persistent sessions, real-time messaging, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/bocaletto-luca/Chat-JS">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Chat-JS">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://github.com/bocaletto-luca/Chat-JS">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #444;
+    }
+    header h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    header p {
+      margin: 5px 0;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    section h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      color: #444;
+    }
+    pre {
+      background: #f8f8f8;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Chat-JS</h1>
+      <h2>Real-Time Chat Web Application | Node.js, Express, Socket.IO</h2>
+      <p>By <strong>Luca Bocaletto</strong></p>
+      <p>
+        <a href="https://bocaletto-luca.github.io/Chat/public/index.html" target="_blank">Test Online Demo</a>
+      </p>
+    </header>
+
+    <section id="description">
+      <h2>Description</h2>
+      <p>
+        Chat-JS is a self-contained real-time chat web application built with Node.js, Express, and Socket.IO.
+        It features user registration and login with persistent sessions, a real-time chat interface with a persistent
+        message history stored in JSON files, a global notification bell, and a "Clear Chat" button to reset the conversation.
+        Designed for easy deployment on a local network using a friendly domain name.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li><strong>User Registration & Login:</strong> Secure registration with persistent sessions.</li>
+        <li><strong>Real-time Chat:</strong> Instant messaging using Socket.IO.</li>
+        <li><strong>Persistent Message History:</strong> Chat history stored in JSON files.</li>
+        <li><strong>Global Notification Bell:</strong> Audible notification for all connected clients.</li>
+        <li><strong>Clear Chat Functionality:</strong> Reset the conversation with the "Clear Chat" button.</li>
+      </ul>
+    </section>
+
+    <section id="project-structure">
+      <h2>Project Structure</h2>
+      <pre>
+Chat-JS/
+├── node_modules/             # Installed npm modules
+├── public/                   # Front-end static files
+│   ├── index.html            # Main HTML page
+│   ├── chat-online.css       # Custom CSS styling
+│   └── chat-online.js        # Client-side JavaScript logic
+├── server.js                 # Back-end server (Express, Socket.IO, session management)
+├── user-save.json            # JSON file storing registered users (auto-generated)
+├── messages.json             # JSON file storing chat messages (auto-generated)
+└── README.md                 # Project documentation
+      </pre>
+    </section>
+
+    <section id="installation">
+      <h2>Installation</h2>
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>Node.js (v12 or later recommended)</li>
+        <li>npm</li>
+      </ul>
+      <h3>Steps</h3>
+      <ol>
+        <li>Clone the repository:
+          <code>git clone https://github.com/bocaletto-luca/Chat-JS.git</code></li>
+        <li>Change into the project directory:
+          <code>cd Chat-JS</code></li>
+        <li>Install dependencies:
+          <code>npm install</code></li>
+      </ol>
+    </section>
+
+    <section id="usage">
+      <h2>Usage</h2>
+      <ol>
+        <li>Start the server:
+          <code>node server.js</code></li>
+        <li>Open your browser and navigate to:
+          <code>http://localhost:3000</code></li>
+        <li>Register and log in to start chatting in real time.</li>
+      </ol>
+    </section>
+
+    <section id="contributing">
+      <h2>Contributing</h2>
+      <p>
+        Contributions, bug reports, and feature requests are welcome. Fork the repository and open a pull request with your changes.
+      </p>
+    </section>
+
+    <section id="license">
+      <h2>License</h2>
+      <p>
+        This project is licensed under the GPL v3. See the <code>LICENSE</code> file for details.
+      </p>
+    </section>
+
+    <section id="acknowledgments">
+      <h2>Acknowledgments</h2>
+      <p>
+        Special thanks to the developers of Express, Socket.IO, and other open-source libraries that make this project possible.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Luca Bocaletto. All rights reserved.</p>
+      <p>
+        Repository: <a href="https://github.com/bocaletto-luca/Chat-JS" target="_blank">Chat-JS on GitHub</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
