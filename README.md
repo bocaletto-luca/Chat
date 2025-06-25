@@ -11,6 +11,9 @@ Chat-JS is a self-contained real-time chat web application built with Node.js, E
 [![Multi-Platform](https://img.shields.io/badge/Multi--Platform-Yes-blueviolet?style=flat-square)]()
 [![Web App](https://img.shields.io/badge/Web%20App-Yes-orange?style=flat-square)]()
 
+[![Test Online](https://img.shields.io/badge/Test%20Online-Demo-brightgreen)](https://bocaletto-luca.github.io/Chat/public/index.html)
+
+
 ---
 
 ## Table of Contents
